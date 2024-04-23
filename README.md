@@ -1,1 +1,3 @@
 # QualityMovieDataIngestion
+
+This project involves implementing a robust data pipeline to handle IMDb movie ratings data stored as CSV files in an S3 bucket. Incorporated a Data Quality check to ensure data integrity and accuracy. Processed and ingested all movies data into Redshift, selectively loading records with IMDb ratings falling between 8.5 and 10.3 into the database for analysis. Routed records with IMDb ratings outside this range to a designated S3 location for further examination, while triggering notifications for such occurrences to facilitate prompt attention.
